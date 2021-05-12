@@ -1,0 +1,103 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Courier Prime';    
+}
+
+#tsparticles {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+nav {
+    position: absolute;
+    top: 4%;
+    right: 7%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links * {
+    margin-inline-end: 1%;
+}
+
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        width: 40%;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    .title {
+        color: #28292c;
+    }
+
+    .description {
+        color: #28292c;
+    }
+
+    .icon {
+        fill: #28292c;
+    }
+
+    .nav-action {
+        color: #28292c;
+    }
+
+    body {
+        background-color: white;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .title {
+        color: #cdcdcd;
+    }
+
+    .description {
+        color: #cdcdcd;
+    }
+
+    .icon {
+        fill: #cdcdcd;
+    }
+    
+    .nav-action {
+        color: #cdcdcd;
+    }
+
+    body {
+        background-color: #28292c;
+    }
+}
